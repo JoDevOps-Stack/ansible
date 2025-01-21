@@ -1,5 +1,5 @@
 - name: PING
   hosts: web
   tasks: #task=module=collectiom
-  - name: ping the server
-    ansible.bultin.ping:
+- name: ping the server
+  ansible.bultin.ping:
