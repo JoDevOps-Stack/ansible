@@ -8,5 +8,5 @@
       state: present      #present means install,"absent" means remove
   - name: start the nginx
     ansible.builtin.service: 
-      name:nginx
-      state:started   
+      name: nginx
+      state: started   
