@@ -6,7 +6,7 @@
     DURATION: 120hrs
     STUDENT: jyothi
   tasks:
-  - name: print the variables
+  - name: print course information
     ansible.builtin.debug:
       msg: "course is {{ COURSE }}, duration is {{ DURATION }}, student is {{ STUDENT }}"
 
