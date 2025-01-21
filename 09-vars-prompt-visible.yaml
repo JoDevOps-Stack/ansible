@@ -1,0 +1,17 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter course name
+    private: false  #this will be visible it is not confidential info.
+  - name: DURATION
+    prompt: please enter Duration
+    private: false 
+  - name: STUDENT
+    prompt: please enter student name
+    private: false 
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }}, duration is {{ DURATION }}, student is {{ STUDENT }}"
