@@ -16,6 +16,6 @@
 backend
 frontend
 
-web
+[web]
 172.31.81.49
 
