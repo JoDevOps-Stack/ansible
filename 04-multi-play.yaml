@@ -6,12 +6,12 @@
     ansible.builyin.debug:
       msg: "Hello from PLAY1 and TASK1"
 
- - name: PLAY2
-   hosts: local
-   connection: local # managing its own node,no need of credentials
-   tasks:
-   - name: PLAY2 and TASK2
-     ansible.builyin.debug:
-      msg: "Hi from PLAY2 and TASK2"     
+- name: PLAY2
+  hosts: local
+  connection: local # managing its own node,no need of credentials
+  tasks:
+  - name: PLAY2 and TASK1
+    ansible.builyin.debug:
+      msg: "Hi from PLAY2 and TASK1"     
 
 
