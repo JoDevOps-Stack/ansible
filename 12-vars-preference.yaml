@@ -8,7 +8,7 @@
     ptompt: enter a value
     private: false
   var_files:   # File variables
-  - variables.yaml
+    - variables.yaml
   tasks:
   - name: print the variable
     vars:       #task level variables  
