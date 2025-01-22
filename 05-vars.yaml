@@ -1,7 +1,7 @@
 - name: variables
   hosts: local
   connection: local
-  vars:
+  vars:  #play level variables
     COURSE: "devops with aws"
     DURATION: 120hrs
     STUDENT: jyothi
