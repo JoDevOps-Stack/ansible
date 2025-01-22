@@ -9,5 +9,5 @@
         duration: 10hrs
         trainer: siva
     ansible.builtin.debug:
-      msg: "course info: {{course info: {{ couse | dict2times }}"
+      msg: "course info: {{ couse | dict2times }}"
 
