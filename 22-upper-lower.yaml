@@ -1,0 +1,9 @@
+- name: convert map to list
+  hosts: local
+  connection: local
+  tasks:
+  - name: convert upper to lower
+    vars:
+      name: "PRAyakshA KOTA"
+    ansible.builtin.debug:
+      msg: "hello {{ name | lower }}"
