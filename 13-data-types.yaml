@@ -13,9 +13,9 @@
     tools:  #map
       ci: jenkins
       cloud: aws
-      contenarization: docker
+      containerization: docker
   tasks:
   - name: print course info
     ansible.builtin.debug:
-      msg: "hello i am learning {{course name}}, duration{{duration}}, topics are: {{topics}}, is it {{live}}, tools covered are: {{tools}}"
+      msg: "hello i am learning {{ course name }}, duration{{ duration }}, topics are: {{ topics }}, is it {{ live }}, tools covered are: {{ tools }}"
 
