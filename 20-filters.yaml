@@ -12,3 +12,13 @@
       fruits: "apple, banana, orange"  #string
     ansible.builtin.debug:
       msg: "fruits are: {{ fruits | split(',') }}"   #string to list
+  
+  
+  
+  - name: loop
+    ansible.builtin.debug:
+      msg: {{ item }}
+    loop:
+    - apple
+    - grep
+    - mango
