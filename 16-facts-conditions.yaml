@@ -9,7 +9,7 @@
     when: ansible_os_family == "Redhat"   # condition
 
   - name: install nginx if ubuntu  # for ubuntu == debian 
-    ansible.builtin.apt module:
+    ansible.builtin.apt:
       name: nginx
       state: installed
     when: ansible_os_family == "Debian"    # condition
