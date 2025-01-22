@@ -1,0 +1,9 @@
+- name: convert map to list
+  hosts: local
+  connection: local
+  tasks:
+  - name: check ip address is valid or not
+    vars:
+      ip: "215.256.245.879"
+    ansible.builtin.debug:
+      msg: "{{ ip | ansible.utils.ipaddr }}"
