@@ -7,7 +7,7 @@
   - name: GREET
     ptompt: enter a value
     private: false
-  var_files:   # File variables
+  vars_files:   # File variables
     - variables.yaml
   tasks:
   - name: print the variable
