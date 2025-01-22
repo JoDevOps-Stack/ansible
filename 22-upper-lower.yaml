@@ -6,4 +6,15 @@
     vars:
       name: "PRAyakshA KOTA"
     ansible.builtin.debug:
-      msg: "hello {{ name | lower }}"
+      msg: "hello {{ name | lower }}"  # function
+
+
+
+- name: convert lower to upper
+    vars:
+      name: "PRAyakshA kota"
+    ansible.builtin.debug:
+      msg: "hello {{ name | upper }}"  # function
+
+
+
