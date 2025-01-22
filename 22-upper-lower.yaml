@@ -10,11 +10,12 @@
 
 
 
-- name: convert lower to upper
-  vars:
-    name: "PRAyakshA kota"
-  ansible.builtin.debug:
-    msg: "hello {{ name | upper }}"  # function
+  - name: convert lower to upper
+    vars:
+      name: "PRAyakshA kota"
+    ansible.builtin.debug:
+      msg: "hello {{ name | upper }}"  # function
 
 
 
+ 
