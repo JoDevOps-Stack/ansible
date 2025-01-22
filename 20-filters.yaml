@@ -17,7 +17,7 @@
   
   - name: loop
     ansible.builtin.debug:
-      msg: {{ item }}
+      msg: "fruits are {{ item }}"
     loop:
     - apple
     - grep
