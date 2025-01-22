@@ -1,0 +1,9 @@
+- name: convert map to list
+  hosts: local
+  connection: local
+  tasks:
+  - name: print min and max
+    vars:
+      numbers: [1,20,65,236,25478]
+    ansible.builtin.debug:
+      msg: "Min is: {{ numbers | min}}, Max is: {{ numbers | max }}"   # function
